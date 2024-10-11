@@ -12,7 +12,9 @@ jobs:
     runs-on: ${{ matrix.os[0] }}
     strategy:
       matrix:
-        os:  [windows-latest, x86_64, msys2]
+        os: [
+          [windows-latest, x86_64, msys2]
+        ]
       fail-fast: false
     defaults:
      run:
